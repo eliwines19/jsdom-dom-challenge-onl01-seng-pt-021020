@@ -63,7 +63,7 @@ document.getElementById("submit").addEventListener("click", function(event){
   let commentsList = document.querySelector('ul#list')
   let li = document.createElement("li");
   let node = document.createTextNode(comment)
-  p.appendChild(node);
-  commentsList.appendChild(p);
+  li.appendChild(node);
+  commentsList.appendChild(li);
   document.querySelector('input#comment-input').value = ''
 });
